@@ -11,7 +11,7 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(connectionString: @"Data Source=ISTTURNB172\SQLEXPRESS;Initial Catalog=Northwind;Integrated Security=True");
+            optionsBuilder.UseSqlServer(connectionString: @"");
         }
         public DbSet<Product> Products { get; set;  }
         public DbSet<Category> Categories { get; set; }
